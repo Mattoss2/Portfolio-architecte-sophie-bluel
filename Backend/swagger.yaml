@@ -6,7 +6,7 @@ info:
 servers:
   - url: http://localhost:5678/api/
 paths:
-  /users/login:
+  /users/login: sophie.bluel@test.tldnpm s
     post:
       summary: Log In the user.
       requestBody:
