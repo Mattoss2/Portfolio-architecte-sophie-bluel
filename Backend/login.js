@@ -9,7 +9,7 @@ document.getElementById("loginForm").addEventListener("submit", function(event) 
 
   // Créer une requête POST
   var xhr = new XMLHttpRequest();
-  xhr.open("POST", "http://localhost:5678/api-docs/#/default/post_works", true);
+  xhr.open("POST", "http://localhost:5678/api/", true);
   xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
   xhr.onreadystatechange = function() {
     if (xhr.readyState === 4) {
