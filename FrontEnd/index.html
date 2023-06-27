@@ -11,17 +11,24 @@
 		rel="stylesheet">
 	<meta name="description" content="">
 	<link rel="stylesheet" href="./assets/style.css">
-	
+	<script src="https://kit.fontawesome.com/312aafe28e.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
+	<div class="bandeau">
+		<div class="buttonEdition">
+			<p class="fa-regular fa-pen-to-square"></p> Mode édition
+		</div>
+		<div class="buttonpublier">publier les changements</div>
+	</div>
+
 	<header>
 		<h1>Sophie Bluel <span>Architecte d'intérieur</span></h1>
 		<nav>
 			<ul>
 				<li>projets</li>
 				<li>contact</li>
-				<li><a href="login.html"></a> </li>
+				<li><a href="login.html">login</a> </li>
 				<li><img src="./assets/icons/instagram.png" alt="Instagram"></li>
 			</ul>
 		</nav>
@@ -42,13 +49,41 @@
 					décorateur(trice)</p>
 			</article>
 		</section>
+		<div id="openModalButton">modifier<i class="fa-regular fa-pen-to-square"></i></div>
+
 		<section id="portfolio">
-			<h2>Mes Projets</h2>
+			<h2>Mes Projets
+
+				<button id="ButtonopenModal">
+					<p class="fa-regular fa-pen-to-square"></p>modifier
+				</button>
+			</h2>
+			</div>
+
+			<div id="modal" class="modal">
+				<div class="modal-content">
+				  <div class="modal-header">
+					<span class="close">&times;</span>
+					<h3>Galerie photo</h3>
+				  </div>
+			  
+				  <div class="modal-body">
+					<!-- Contenu du modal -->
+				  </div>
+			  
+				  <div class="modal-footer">
+					<hr class="lowerbar"></hr>
+					<h4>Ajouter une photo</h4>
+					<p>Supprimer la galerie</p>
+				  </div>
+				</div>
+			  </div>
+
 			<div id="filterContainer"></div>
 			<div id="gallery" class="gallery">
 
-				</div>
-			
+			</div>
+
 		</section>
 
 		<section id="contact">
@@ -74,6 +109,7 @@
 		</nav>
 	</footer>
 	<script src="galerie.js"></script>
+	<script src="modal.js"></script>
 </body>
 
 </html>

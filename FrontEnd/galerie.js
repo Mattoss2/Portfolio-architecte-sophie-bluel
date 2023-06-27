@@ -6,11 +6,12 @@ async function logJSONData() {
   console.log(jsonData);
   allWorks = jsonData; // Sauvegarder les travaux initiaux
   addWork(jsonData);
+  
 }
 
 function addWork(data) {
 	const gallery = document.getElementById("gallery");
-
+console.log("Mathys",data)
   
 	data.forEach(item => {
 	  const figure = document.createElement("figure");
