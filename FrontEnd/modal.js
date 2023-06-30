@@ -62,3 +62,28 @@ function clearGallery() {
   const gallery = document.querySelector(".modal-body");
   gallery.innerHTML = ""; // Effacer le contenu de la galerie
 }
+
+
+
+document.addEventListener('DOMContentLoaded', function() {
+  var btnSupprimer = document.getElementById('btnSupprimer');
+  btnSupprimer.addEventListener('click', supprimerElement);
+});
+
+function supprimerElement() {
+  fetch('http://localhost:5678/api/works/1', {
+    method: 'DELETE'
+  })
+  .then(response => {
+    if (response.ok) {
+      var elementASupprimer = document.getElementById('btnSupprimer');
+      elementASupprimer.parentNode.removeChild(elementASupprimer);
+      console.log('La galerie a été supprimée avec succès.');
+    } else {
+      console.error('La suppression de la galerie a échoué.');
+    }
+  })
+  .catch(error => {
+    console.error('Une erreur s\'est produite lors de la suppression de la galerie.', error);
+  });
+}

@@ -525,3 +525,26 @@ background: #1D6154;
 height: 14px;
 padding: 12px;
   }
+
+ i.fa-arrows-up-down-left-right::before{
+	color: white;
+	background-color: black;
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 20px;
+	height: 20px;
+	color: white;
+	background-color: black;
+	/* Autres styles d'icône */
+	z-index: 1; /* Ajustez le z-index pour que l'icône s'affiche au-dessus des images */
+  }
+
+  .modal-body :first-child {
+	position: relative;
+  }
+  
+  .modal-body :nth-child(2){
+	margin-right: 10px;
+  }
