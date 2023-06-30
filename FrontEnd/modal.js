@@ -70,14 +70,19 @@ document.addEventListener('DOMContentLoaded', function() {
   btnSupprimer.addEventListener('click', supprimerElement);
 });
 
+
+
 function supprimerElement() {
-  fetch('http://localhost:5678/api/works/1', {
-    method: 'DELETE'
+  fetch('http://localhost:5678/api/works/3', { 
+    method: 'DELETE',
+    headers: {
+      Autorization: `Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsImlhdCI6MTY4ODE0MDAwNCwiZXhwIjoxNjg4MjI2NDA0fQ.b9RQAjIGJG_vgqRvGmae08CiP97UouCp_ZQ4nBsYp90`
+    }
   })
   .then(response => {
+    console.log(response);
     if (response.ok) {
-      var elementASupprimer = document.getElementById('btnSupprimer');
-      elementASupprimer.parentNode.removeChild(elementASupprimer);
+      
       console.log('La galerie a été supprimée avec succès.');
     } else {
       console.error('La suppression de la galerie a échoué.');

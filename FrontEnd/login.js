@@ -40,7 +40,8 @@ document.getElementById("loginForm").addEventListener("submit", function(event) 
         alert(error.message);
         if (localStorage.getItem("token")) {
           // Change the button text to "Logout"
-          document.getElementById("loginButton").textContent = "Déconnexion";
+          document.getElementById("loginButton").textContent = "logout";
+          
       
           // Add an event listener for the logout button
           document.getElementById("loginButton").addEventListener("click", logout);
