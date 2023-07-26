@@ -235,9 +235,9 @@ document.getElementById('fileInput').addEventListener('change', function(e) {
 
 
 function addProjectToGallery(project) {
-  // votre code ici pour ajouter le projet à la galerie
+  
 }
 
 function addProjectToModal(project) {
-  // votre code ici pour ajouter le projet à la modal
+  
 }
