@@ -31,9 +31,10 @@ document.getElementById("loginForm").addEventListener("submit", function(event) 
       .then(function(data) {
         // Save the token in localStorage
         localStorage.setItem("token", data.token);
+  document.getElementById("login").innerHTML= "Logout";
   
         // Redirect to the homepage
-        window.location.href = "file:///D:/Users/Matis/Documents/GitHub/clone%20portfolio/Portfolio-architecte-sophie-bluel/FrontEnd/index.html";
+        window.location.href = "index.html";
       })
       .catch(function(error) {
         // Handle the error
@@ -55,6 +56,8 @@ document.getElementById("loginForm").addEventListener("submit", function(event) 
         // Supprime le jeton du localStorage
         localStorage.removeItem("token");
       
-        // Change le texte du bouton en "Connexion"
-        document.getElementById("loginButton").textContent = "Connexion";
+
       }
+
+      
+      

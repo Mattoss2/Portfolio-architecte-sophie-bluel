@@ -28,7 +28,7 @@
 			<ul>
 				<li>projets</li>
 				<li>contact</li>
-				<li><a href="login.html">login</a> </li>
+				<li><a href="login.html" id="loginButton">login</a> </li>
 				<li><img src="./assets/icons/instagram.png" alt="Instagram"></li>
 			</ul>
 		</nav>
@@ -62,24 +62,72 @@
 
 			<div id="modal" class="modal">
 				<div class="modal-content">
-				  <div class="modal-header">
-					<span class="close">&times;</span>
-					<h3>Galerie photo</h3>
-				  </div>
-			  
-				  <div class="modal-body">
-				
-					<i class="fa-solid fa-arrows-up-down-left-right"></i>
-				  </div>
-			  
-				  <div class="modal-footer">
-					<hr class="lowerbar"></hr>
-					<h4>Ajouter une photo</h4>
-					<p id="btnSupprimer">Supprimer la galerie</p>
-				  </div>
-				</div>
-			  </div>
+					<div class="modal-header">
+						<span class="close">&times;</span>
+						<h3>Galerie photo</h3>
+					</div>
 
+					<div class="modal-body">
+
+
+					</div>
+
+
+				
+
+				<div class="modal-footer">
+					<hr class="lowerbar">
+					</hr>
+					<h4 id="btnAjouterPhoto">Ajouter une photo</h4>
+					<p id="btnSupprimer">Supprimer la galerie</p>
+				</div>
+			</div>
+			</div>
+		
+			<div id="modal2" class="modal2">
+				<div class="modal-content2">
+
+					<div class="modal-header2">
+						<span class="closebtn">&times;</span>
+						<h3>Ajout photo</h3>
+						<span class="returnbtn">&larr;</span>
+
+					</div>
+					<div class="modal-body2">
+						<div class="addphoto">
+							<div class="addphoto-container">
+								<i class="fa-solid fa-image"></i>
+								<input type="file" class="newphoto" id="fileInput"> 
+								<div class="btnnewphoto" id="btnnewphoto">+ Ajouter photo</div>
+							</input>
+								<h5>jpg,png:4mo max</h5>
+
+
+								<div>
+
+								</div>
+
+							</div>
+							<div class="labelcontainer">
+							<label for="title" class="label">Titre</label>
+							<input type="text" class="labelModal" id="title" name="title">
+							
+							<label for="categorie" class="label">Catégorie</label> 
+							<select class="label2Modal" id="categorie" name="categorie"></select>
+
+						</div>
+						</div>
+
+					</div>
+					<div class="modal-footer2">
+						<hr class="lowerbar2">
+					</hr>
+					<button class="button2" id="button2">Valider</button>
+
+					</div>
+				</div>
+
+			</div>
 			<div id="filterContainer"></div>
 			<div id="gallery" class="gallery">
 
@@ -111,6 +159,8 @@
 	</footer>
 	<script src="galerie.js"></script>
 	<script src="modal.js"></script>
+	<script src="index.js"></script>
+
 </body>
 
 </html>

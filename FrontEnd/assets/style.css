@@ -345,7 +345,7 @@ button {
 	/* Par défaut, la modal est cachée */
 	position: fixed;
 	/* Position fixe pour la superposer au contenu */
-	z-index: 1;
+	z-index: 2;
 	/* Une valeur de z-index élevée pour être au-dessus du reste du contenu */
 	left: 0;
 	top: 0;
@@ -526,25 +526,174 @@ height: 14px;
 padding: 12px;
   }
 
- i.fa-arrows-up-down-left-right::before{
-	color: white;
-	background-color: black;
-	content: "";
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 20px;
-	height: 20px;
-	color: white;
-	background-color: black;
-	/* Autres styles d'icône */
-	z-index: 1; /* Ajustez le z-index pour que l'icône s'affiche au-dessus des images */
+  .icon-box {
+	display: flex;
+align-items: center;
+justify-content: end;
+font-size: 9px;
+gap: 2px;
+margin-top: -113px;
+margin-right: 4px;
   }
 
-  .modal-body :first-child {
-	position: relative;
+  .modal-body  :first-child .icon-box{
+	margin-top: -113px;
+	margin-right: 4px;
+  }
+
+  .fa-arrows-up-down-left-right {
+	background-color: black;
+color: white;
+border-radius: 2px;
+padding: 4px;
   }
   
-  .modal-body :nth-child(2){
-	margin-right: 10px;
+  .fa-trash-can {
+	background-color: black;
+color: white;
+border-radius: 2px;
+padding: 4px;
+  }
+
+  #modal2 {
+	
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 99%;
+	height: 100%;
+	z-index: 1;
+  }
+  
+  .modal-content2 {
+	background-color: #fff;
+	margin: 15% auto;
+	padding: 20px;
+	border: 1px solid #888;
+	width: 80%;
+	max-width: 600px;
+	position: relative; /* Permet de centrer la modal */
+  }
+  
+  
+
+
+.modal-header2{
+
+	display: flex;
+	width: 100%;
+	flex-direction: row-reverse;
+gap: 156px;
+height: 16%;
+}
+
+.modal2 h3{
+	margin-top: 65px;
+	margin-right: 64px;
+	width: 50%;
+}
+
+.returnbtn{
+	width: 13%;
+	
+}
+.modal-body2{
+	width: 75%;
+	display: flex;
+	flex-wrap: wrap;
+	height: 444px;
+	justify-content: space-between;
+	padding-left: 58px;
+	
+}
+.addphoto {
+	width: 420px;
+	height: 169px;
+	border-radius: 3px;
+	background: #E8F1F6;
+	margin-left: 30px;
+  }
+  .addphoto-container{
+	height: 100%;
+justify-content: center;
+display: flex;
+flex-direction: column;
+padding-left: 137px;
+width: 32%;
+  }
+  .fa-image{
+	opacity: 0.5;
+	font-size: 33px;
+	color: #b9c5cc;
+	margin-left: 45px;
+  }
+
+  .btnnewphoto{
+	width: 137px;
+	height: 26px;
+	border-radius: 50px;
+	background: #CBD6DC;
+	color: #306685;
+	text-align: center;
+	margin-top: 20px;
+	padding-top: 3px;
+  }
+
+  h5{
+	color: #444;
+text-align: center;
+font-family: "Work Sans";
+font-size: 10px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+margin-top: 5px;
+  }
+
+  .labelcontainer{
+
+	display: flex;
+	flex-direction: column;
+  }
+
+  .lowerbar2{
+	color: #B3B3B3;
+	width: 75%;
+	height: 0px;
+	border: 1px solid #B3B3B3;
+	margin-bottom: 38px;
+  }
+
+
+  .modal-content2{
+	background-color: #fefefe;
+	margin: 10% auto;
+	/* Centre la modal verticalement et horizontalement */
+	padding: 20px;
+	border: 1px solid #888;
+	width: 616px;
+	height: 733px;;
+	display: flex;
+	flex-wrap: wrap;
+	border-radius: 10px;
+  }
+
+  .button2{
+	width: 139px;
+	font-family: 'Syne';
+	width: 237px;
+	height: 36px;
+	border-radius: 60px;
+background: #1D6154;
+color: white;
+  }
+  .modal-footer2{
+	width: 100%;
+align-items: center;
+display: flex;
+flex-direction: column;
+  }
+
+  .newphoto {
+	display: none;
   }
