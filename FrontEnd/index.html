@@ -15,7 +15,7 @@
 </head>
 
 <body>
-	<div class="bandeau">
+	<div class="bandeau" id="bandeau">
 		<div class="buttonEdition">
 			<p class="fa-regular fa-pen-to-square"></p> Mode édition
 		</div>
@@ -26,8 +26,8 @@
 		<h1>Sophie Bluel <span>Architecte d'intérieur</span></h1>
 		<nav>
 			<ul>
-				<li>projets</li>
-				<li>contact</li>
+				<li><a href="#portfolio">projets</a></li>
+				<li><a href="#contact">contact</a></li>
 				<li><a href="login.html" id="loginButton">login</a> </li>
 				<li><img src="./assets/icons/instagram.png" alt="Instagram"></li>
 			</ul>
@@ -55,10 +55,10 @@
 			<h2>Mes Projets
 
 				<button id="ButtonopenModal">
-					<p class="fa-regular fa-pen-to-square"></p>modifier
+					<b class="fa-regular fa-pen-to-square"></b>modifier
 				</button>
 			</h2>
-			</div>
+
 
 			<div id="modal" class="modal">
 				<div class="modal-content">
@@ -73,17 +73,17 @@
 					</div>
 
 
-				
 
-				<div class="modal-footer">
-					<hr class="lowerbar">
-					</hr>
-					<h4 id="btnAjouterPhoto">Ajouter une photo</h4>
-					<p id="btnSupprimer">Supprimer la galerie</p>
+
+					<div class="modal-footer">
+						<hr class="lowerbar">
+
+						<h4 id="btnAjouterPhoto">Ajouter une photo</h4>
+						<p id="btnSupprimer">Supprimer la galerie</p>
+					</div>
 				</div>
 			</div>
-			</div>
-		
+
 			<div id="modal2" class="modal2">
 				<div class="modal-content2">
 
@@ -95,34 +95,35 @@
 					</div>
 					<div class="modal-body2">
 						<div class="addphoto">
-							<div class="addphoto-container">
+
+							<div class="addphoto-container" id="addphoto-container">
+								<div id="newPhoto"></div>
 								<i class="fa-solid fa-image"></i>
-								<input type="file" class="newphoto" id="fileInput"> 
+								<input type="file" class="newphoto" id="fileInput">
 								<div class="btnnewphoto" id="btnnewphoto">+ Ajouter photo</div>
-							</input>
+
+
+
 								<h5>jpg,png:4mo max</h5>
+							</div>
 
 
-								<div>
 
-								</div>
+							<div class="labelcontainer">
+								<label for="title" class="label">Titre</label>
+								<input type="text" class="labelModal" id="title" name="title">
+
+								<label for="categorie" class="label">Catégorie</label>
+								<select class="label2Modal" id="categorie" name="categorie"></select>
 
 							</div>
-							<div class="labelcontainer">
-							<label for="title" class="label">Titre</label>
-							<input type="text" class="labelModal" id="title" name="title">
-							
-							<label for="categorie" class="label">Catégorie</label> 
-							<select class="label2Modal" id="categorie" name="categorie"></select>
-
-						</div>
 						</div>
 
 					</div>
 					<div class="modal-footer2">
 						<hr class="lowerbar2">
-					</hr>
-					<button class="button2" id="button2">Valider</button>
+
+						<button class="button2" id="button2">Valider</button>
 
 					</div>
 				</div>
